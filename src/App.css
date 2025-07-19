@@ -1,0 +1,65 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  /* Cyberpunk gradient background */
+  background: linear-gradient(135deg, #0f2027 0%, #2c5364 50%, #ff0080 100%);
+  font-family: 'Orbitron', 'Arial', sans-serif;
+  color: #fff;
+  padding: 2rem;
+}
+
+/* Cyberpunk neon effect for headings */
+h1 {
+  color: #ff00cc;
+  text-shadow: 0 0 10px #ff00cc, 0 0 20px #00fff0;
+  font-family: 'Orbitron', 'Arial', sans-serif;
+  letter-spacing: 2px;
+}
+
+/* Style the select dropdown */
+select {
+  background: #222;
+  color: #00fff0;
+  border: 2px solid #ff00cc;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-family: 'Orbitron', 'Arial', sans-serif;
+  margin-left: 0.5rem;
+}
+
+/* Example ProductList styling */
+.product-list {
+  width: 100%;
+  max-width: 1200px; /* Increased max width */
+  margin: 2rem auto 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Larger min width */
+  gap: 2.0rem; /* Slightly larger gap */
+}
+
+/* Example ProductItem styling */
+.product-item {
+  background: rgba(34, 34, 34, 0.85);
+  border: 2px solid #ff00cc;
+  border-radius: 16px; /* Slightly larger radius */
+  padding: 2.5rem;     /* More padding */
+  color: #fff;
+  box-shadow: 0 0 24px #00fff0;
+  font-size: 1.25rem;  /* Larger text */
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.product-item:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 0 40px #ff00cc, 0 0 20px #00fff0;
+}
